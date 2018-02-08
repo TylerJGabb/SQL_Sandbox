@@ -1,0 +1,6 @@
+from DatabaseAccess import *
+dba = test()
+rows = dba.execute_rows("SELECT TOP 10 Name FROM Associates")
+for row in rows:
+	print(row)
+
