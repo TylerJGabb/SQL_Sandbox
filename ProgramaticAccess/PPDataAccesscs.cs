@@ -446,9 +446,9 @@ namespace PolyPrintUtilities
         private static string serverName = "";
         private static PPServerType serverType = PPServerType.stProductionServer;
 
-        private static string PRODUCTION = "data source = " + "PP-Porsche-01" + "; initial catalog =PolyPrint; user id = sa; password = MngDBsvr2008@polyprint ";
-        private static string MUSTANG = "data source = " + "PP-Mustang" + "; initial catalog = PolyPrint; user id = sa; password = MngDBsvr2008@polyprint ";
-        private static string TYLERSDB = "Server=tcp:gabbdb.database.windows.net,1433;Initial Catalog=TylersDB;Persist Security Info=False;User ID=tygabb;Password=Tyty85718!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private static string PRODUCTION = "NOPE"
+        private static string MUSTANG = "NOPE"
+        private static string TYLERSDB = "NOPE"
 
         private static string _connectionString = null;
 
