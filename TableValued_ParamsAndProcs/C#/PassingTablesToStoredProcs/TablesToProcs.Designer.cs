@@ -28,34 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonSendSmallSet = new System.Windows.Forms.Button();
+            this.buttonSendBig = new System.Windows.Forms.Button();
+            this.bigSetLabel = new System.Windows.Forms.Label();
+            this.buttonSendRowsOneByOne = new System.Windows.Forms.Button();
+            this.rowsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonSendSmallSet
             // 
-            this.button1.Location = new System.Drawing.Point(98, 118);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonSendSmallSet.Location = new System.Drawing.Point(12, 12);
+            this.buttonSendSmallSet.Name = "buttonSendSmallSet";
+            this.buttonSendSmallSet.Size = new System.Drawing.Size(174, 23);
+            this.buttonSendSmallSet.TabIndex = 0;
+            this.buttonSendSmallSet.Text = "Send Small Set";
+            this.buttonSendSmallSet.UseVisualStyleBackColor = true;
+            this.buttonSendSmallSet.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttonSendBig
+            // 
+            this.buttonSendBig.Location = new System.Drawing.Point(12, 41);
+            this.buttonSendBig.Name = "buttonSendBig";
+            this.buttonSendBig.Size = new System.Drawing.Size(174, 23);
+            this.buttonSendBig.TabIndex = 1;
+            this.buttonSendBig.Text = "Send Big Set";
+            this.buttonSendBig.UseVisualStyleBackColor = true;
+            this.buttonSendBig.Click += new System.EventHandler(this.buttonSendBig_Click);
+            // 
+            // bigSetLabel
+            // 
+            this.bigSetLabel.AutoSize = true;
+            this.bigSetLabel.Location = new System.Drawing.Point(192, 46);
+            this.bigSetLabel.Name = "bigSetLabel";
+            this.bigSetLabel.Size = new System.Drawing.Size(45, 13);
+            this.bigSetLabel.TabIndex = 2;
+            this.bigSetLabel.Text = "Elapsed";
+            // 
+            // buttonSendRowsOneByOne
+            // 
+            this.buttonSendRowsOneByOne.Location = new System.Drawing.Point(12, 70);
+            this.buttonSendRowsOneByOne.Name = "buttonSendRowsOneByOne";
+            this.buttonSendRowsOneByOne.Size = new System.Drawing.Size(174, 23);
+            this.buttonSendRowsOneByOne.TabIndex = 3;
+            this.buttonSendRowsOneByOne.Text = "Send Rows One By One";
+            this.buttonSendRowsOneByOne.UseVisualStyleBackColor = true;
+            this.buttonSendRowsOneByOne.Click += new System.EventHandler(this.buttonSendRowsOneByOne_Click);
+            // 
+            // rowsLabel
+            // 
+            this.rowsLabel.AutoSize = true;
+            this.rowsLabel.Location = new System.Drawing.Point(192, 75);
+            this.rowsLabel.Name = "rowsLabel";
+            this.rowsLabel.Size = new System.Drawing.Size(45, 13);
+            this.rowsLabel.TabIndex = 4;
+            this.rowsLabel.Text = "Elapsed";
             // 
             // TablesToProcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.rowsLabel);
+            this.Controls.Add(this.buttonSendRowsOneByOne);
+            this.Controls.Add(this.bigSetLabel);
+            this.Controls.Add(this.buttonSendBig);
+            this.Controls.Add(this.buttonSendSmallSet);
             this.Name = "TablesToProcs";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonSendSmallSet;
+        private System.Windows.Forms.Button buttonSendBig;
+        private System.Windows.Forms.Label bigSetLabel;
+        private System.Windows.Forms.Button buttonSendRowsOneByOne;
+        private System.Windows.Forms.Label rowsLabel;
     }
 }
 
