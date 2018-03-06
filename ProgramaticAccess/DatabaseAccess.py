@@ -1,13 +1,10 @@
 import pymssql
 class DatabaseAccess:
     def __init__(self,server,user,password,database):
-        if(not '@' in user):
-            raise ValueError("Argument provided for `user` in wrong format\n"+
-            "Must be in format user@server\n" + 
-            "https://docs.microsoft.com/en-us/sql/connect/python/pymssql/step-3-proof-of-concept-connecting-to-sql-using-pymssql")
+        '''https://docs.microsoft.com/en-us/sql/connect/python/pymssql/step-3-proof-of-concept-connecting-to-sql-using-pymssql'''
         self.conn = pymssql.connect(
             server=server,
-            user=user,
+            user='{0}@{1}.format(user,server),
             password=password,
             database=database)
 
